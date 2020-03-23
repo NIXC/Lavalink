@@ -19,7 +19,7 @@ bootJar {
     archiveName = "Lavalink.jar"
 }
 
-sourceCompatibility = targetCompatibility = 11
+sourceCompatibility = targetCompatibility = 1.8
 
 bootRun {
     //compiling tests during bootRun increases the likelihood of catching broken tests locally instead of on the CI
@@ -37,7 +37,7 @@ dependencies {
     compile group: 'space.npstr.Magma', name: 'magma', version: magmaVersion
     compile group: 'com.sedmelluq', name: 'lavaplayer', version: lavaplayerVersion
     compile group: 'com.sedmelluq', name: 'lavaplayer-ext-youtube-rotator', version: lavaplayerIpRotatorVersion
-    compile group: 'com.sedmelluq', name: 'jda-nas', version: jdaNasVersion 
+    compile group: 'com.sedmelluq', name: 'jda-nas', version: jdaNasVersion
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: kotlinVersion
 
     compile group: 'com.github.shredder121', name: 'jda-async-packetprovider', version: jappVersion
@@ -46,7 +46,6 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-websocket', version: springWebSocketVersion
     compile group: 'ch.qos.logback', name: 'logback-classic', version: logbackVersion
     compile group: 'io.sentry', name: 'sentry-logback', version: sentryLogbackVersion
-    compile group: 'com.github.oshi', name: 'oshi-core', version: oshiVersion
     compile group: 'org.json', name: 'json', version: jsonOrgVersion
     compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: springBootVersion) {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
